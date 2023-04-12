@@ -1,0 +1,129 @@
+.forecast-card {
+    .card-firstside {
+        border-radius: 5%;
+        height: 500px;
+        background-color: rgb(0, 255, 255);
+        color: white;
+
+
+        .card-size-current-day {
+
+            ul li {
+                font-size: 19px;
+
+                i {
+                    font-size: 15px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+    }
+
+    .firstcard-underside {
+        height: 70%; //////Silmek Bunu
+
+        ul li {
+
+            &:nth-child(1) {
+                i {
+                    font-size: 70px;
+                }
+            }
+
+            &:nth-child(2) {
+
+                p {
+                    font-size: 70px;
+                    font-weight: 700;
+                    line-height: 0.8;
+                }
+            }
+
+            &:nth-child(3) {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 2;
+            }
+        }
+    }
+
+
+    //card two secondly side 
+
+    .card-secondside {
+        background-color: rgb(33, 34, 49);
+        border-radius: 0% 5% 5% 0%;
+        border-left: none;
+        height: 455px;
+        color: white;
+
+        .precipitation,
+        .humidity,
+        .wind {
+            text-transform: uppercase;
+        }
+
+        .card-size-other-days {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+
+            .active {
+                background-color: white;
+                color: rgb(33, 34, 49);
+
+                ul li:nth-child(2) {
+                    font-weight: 300;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-radius: 10%;
+                color: white;
+                width: 100%;
+
+
+
+
+
+                &:focus {
+                    background-color: white;
+                    color: rgb(33, 34, 49);
+
+                    ul li:nth-child(2) {
+                        font-weight: 300;
+                    }
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    border-radius: 0%;
+                    height: 100%;
+
+
+                    li {
+                        line-height: 2;
+
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .change-local-btn {
+            a {
+                padding: 9px 28%;
+                background-color: #00BFFF;
+                color: white;
+                font-weight: 500;
+                border-radius: 20px;
+            }
+        }
+    }
+}
