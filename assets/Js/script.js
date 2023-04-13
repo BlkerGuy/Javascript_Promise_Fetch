@@ -21,7 +21,7 @@ form.addEventListener('submit', async (e) => {
         // const response = await fetch(`https://source.unsplash.com/random/900×700/?${inp.value}`);
         // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?id={${inp.value}}&appid={d479d3bf9c94ea562ecd0cc819118096}&lang={az}`);
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inp.value}&appid=d479d3bf9c94ea562ecd0cc819118096&lang=az&units=metric`);
-        console.log(response);
+        console.log(response[0]);
 
         let country=document.querySelector('#country');
         // country.innerText=response.arrayBuffer.prototype()
